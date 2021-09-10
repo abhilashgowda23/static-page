@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Navigation Bar */
+  #navbar{
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+  
+  #navbar::before{
+    content: "";
+    background-color: grey;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  
+  /* Navigation Bar: Logo and Image */
+  #logo{
+    margin: 10px 34px;
+  }
+  
+  #logo img{
+    height: 59px;
+    margin: 3px 6px;
+  }
+  
+  
+  /* Navigation Bar: List Styling */
+  
+  #navbar ul{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: flex-end;
+    
+  }
+  
+  #navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+    
+  }
+  
+  #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    margin-top: -65px;
+    border-radius: 20px;
+    text-decoration: none;
+    float: right;
+  }
+  
+  #navbar ul li a:hover{
+    color: black;
+    background-color: rgb(250, 52, 52);
+  }
+  /*service section */
+    
+  #services{
+    margin: 34px;
+    display: flex;
+    
+  }
+  #services .box{ 
+    border: 2px solid rgb(44, 42, 165);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f0cdcd;
+    margin-bottom: 20px;
+  }
+  
+  #services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   margin-bottom: 5px;
+  }
+  
+  #services .box p{
+    font-family: 'Courier New', Courier, monospace;
+  
+  }
+  ._9uwBC {
+    height: 20px;
+    width: 42px;
+    padding: 0px 3px;
+    font-weight: 400;
+    margin-right: 8px;
+  }
+  ._3Mn31, ._9uwBC {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+  }
+  
+  .wY0my {
+    background-color: #4e27db;
+    color: goldenrod;
+  }
+  
+  ._537e4 {
+    font-size: 10px;
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+  }
+  *, :after, :before {
+    box-sizing: inherit;
+  }
+  .nVWSi{
+    font-size: 13px;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .Zlfdx {
+    
+    padding-top: 0px;
+    margin-top: 10px;
+    color: #0c3b01;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  /* Utility Classes */
+  .h-primary{
+  font-family: 'Bree Serif', serif;
+  font-size: 3.8rem;
+  padding: 12px;
+  }
+  
+  .center{
+  text-align: center;
+  }
+    
+    /* Mobile menu */
+  @media all and (max-width: 480px) {
+   
+  /* Navigation */
+    #navbar {
+      flex-direction: column;
+    }
+  
+    #navbar ul li a{
+      font-size: 1rem;
+      padding: 0px 7px;
+      padding-bottom: 8px;
+    }
+  /* Services section  */
+    #services{
+      flex-direction: column;
+    }
+  
+    #services .box { 
+      padding: 14px;
+      margin: 2px 0px; 
+      margin-bottom: 20px;
+    }
+    #services .box img{ 
+      width: 154px;
+     }
+  }

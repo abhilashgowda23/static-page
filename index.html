@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiggy page</title>
+    <link rel="stylesheet" href="static.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="data:image/png;base64,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" alt="swiggy_logo.png" width="70px"
+                height="70px">
+            </div>
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Offers</a></li>
+                <li class="item"><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        
+
+    </header>
+    <main>
+        <section id="services-container">
+
+            <div id="services">
+                <div class="box">
+                    <img src="https://static.toiimg.com/thumb/54308405.cms?imgsize=510571&width=800&height=800" alt="">
+                    <h2 class="h-secondary center">hyderbad-biryani</h2>
+                    <hr style="margin-top: 19px;">
+                    <div class="_3Mn31">
+                        <div class="_9uwBC wY0my">
+                            <span style="margin-bottom: 4px; margin-right: 3px;">&#9733;</span>
+                            <span>4.6</span>
+                        </div>
+                        <div>•</div>
+                        <div class="nVWSi">37 MINS</div>
+                        <div>•</div>
+                        <div class="nVWSi">₹250 FOR TWO</div>
+                    </div>
+                    <hr style="margin-top: 15px;margin-right:3px;">
+                    <div class="_3Mn31">
+                        <div class="Zlfdx">
+                            30% off | Use GET60NOW
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/117944.jpg?output-format=auto&output-quality=auto" alt="">
+                    <h2 class="h-secondary center"> HOT burger</h2>
+                    <hr style="margin-top: 19px;">
+                    <div class="_3Mn31">
+                        <div class="_9uwBC wY0my">
+                            <span style="margin-bottom: 4px; margin-right: 3px;">&#9733;</span>
+                            <span>4.3</span>
+                        </div>
+                        <div>•</div>
+                        <div class="nVWSi">50 MINS</div>
+                        <div>•</div>
+                        <div class="nVWSi">₹400 FOR TWO</div>
+                    </div>
+                    <hr style="margin-top: 15px;margin-right:3px;">
+                    <div class="_3Mn31">
+                        <div class="Zlfdx">
+                            40% off | Use GET50NOW
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://foodiesterminal.com/wp-content/uploads/2019/04/chicken-boti-kabab-recipe.jpg" alt="">
+                    <h2 class="h-secondary center">kabab-Specil</h2>
+                    <hr style="margin-top: 19px;">
+                    <div class="_3Mn31">
+                        <div class="_9uwBC wY0my">
+                            <span style="margin-bottom: 4px; margin-right: 3px;">&#9733;</span>
+                            <span>4.4</span>
+                        </div>
+                        <div>•</div>
+                        <div class="nVWSi">25 MINS</div>
+                        <div>•</div>
+                        <div class="nVWSi">₹450 FOR TWO</div>
+                    </div>
+                    <hr style="margin-top: 15px;margin-right:3px;">
+                    <div class="_3Mn31">
+                        <div class="Zlfdx">
+                            20% off | Use ALL DAY
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services">
+                <div class="box">
+                    <img src="https://sukhis.com/wp-content/uploads/2020/01/Dosa-500x400.jpg" alt="">
+                    <h2 class="h-secondary center">special dosaa</h2>
+                    <hr style="margin-top: 19px;">
+                    <div class="_3Mn31">
+                        <div class="_9uwBC wY0my">
+                            <span style="margin-bottom: 4px; margin-right: 3px;">&#9733;</span>
+                            <span>4.8</span>
+                        </div>
+                        <div>•</div>
+                        <div class="nVWSi">45 MINS</div>
+                        <div>•</div>
+                        <div class="nVWSi">₹300 FOR TWO</div>
+                    </div>
+                    <hr style="margin-top: 15px;margin-right:3px;">
+                    <div class="_3Mn31">
+                        <div class="Zlfdx">
+                            10% off | Use CMNG NOW
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://static.toiimg.com/thumb/56933159.cms?imgsize=686279&width=800&height=800" alt="">
+                    <h2 class="h-secondary center">hot pizza</h2>
+                    <hr style="margin-top: 19px;">
+                    <div class="_3Mn31">
+                        <div class="_9uwBC wY0my">
+                            <span style="margin-bottom: 4px; margin-right: 3px;">&#9733;</span>
+                            <span>4.3</span>
+                        </div>
+                        <div>•</div>
+                        <div class="nVWSi">20 MINS</div>
+                        <div>•</div>
+                        <div class="nVWSi">₹20 FOR TWO</div>
+                    </div>
+                    <hr style="margin-top: 15px;margin-right:3px;">
+                    <div class="_3Mn31">
+                        <div class="Zlfdx">
+                            20% off | Use READY NOW
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://www.whiskaffair.com/wp-content/uploads/2020/03/Hakka-Noodles-2-3.jpg" alt="">
+                    <h2 class="h-secondary center">noodles special</h2>
+                    <hr style="margin-top: 19px;">
+                    <div class="_3Mn31">
+                        <div class="_9uwBC wY0my">
+                            <span style="margin-bottom: 4px; margin-right: 3px;">&#9733;</span>
+                            <span>4.9</span>
+                        </div>
+                        <div>•</div>
+                        <div class="nVWSi">40 MINS</div>
+                        <div>•</div>
+                        <div class="nVWSi">₹270 FOR TWO</div>
+                    </div>
+                    <hr style="margin-top: 15px;margin-right:3px;">
+                    <div class="_3Mn31">
+                        <div class="Zlfdx">
+                            30% off | Use GOOD FOOD
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
